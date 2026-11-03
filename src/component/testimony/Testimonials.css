@@ -1,0 +1,120 @@
+.testimonials-section {
+  padding: 80px 6%;
+  background: #ffffff;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-heading {
+  max-width: 650px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.testimonials-subtitle {
+  color: #b68a45;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.testimonials-heading h2 {
+  margin: 12px 0;
+  color: #17251f;
+  font-size: clamp(28px, 4vw, 40px);
+}
+
+.testimonials-heading > p:last-child {
+  color: #667085;
+  line-height: 1.7;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.testimonial-card {
+  padding: 28px;
+  border: 1px solid #e8eaf0;
+  border-radius: 16px;
+  background: #ffffff;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(23, 37, 31, 0.09);
+}
+
+.testimonial-stars {
+  color: #b68a45;
+  letter-spacing: 3px;
+  font-size: 18px;
+}
+
+.testimonial-review {
+  min-height: 115px;
+  margin: 20px 0;
+  color: #596579;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.testimonial-person {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding-top: 18px;
+  border-top: 1px solid #e8eaf0;
+}
+
+.testimonial-avatar {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #17251f;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.testimonial-person h3 {
+  color: #17251f;
+  font-size: 15px;
+  letter-spacing: 0;
+}
+
+.testimonial-person p {
+  margin: 5px 0 0;
+  color: #7b8494;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonials-section {
+    padding: 60px 5%;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-review {
+    min-height: auto;
+  }
+}
