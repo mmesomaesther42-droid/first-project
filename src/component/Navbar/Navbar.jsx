@@ -1,8 +1,9 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div  className="website">
+    <div className="website">
       <header className="navbar">
         <a href="#home" className="logo">
           <span className="logo-icon">⌂</span>
@@ -11,20 +12,20 @@ const Navbar = () => {
 
         <nav className="nav-links">
           <a href="#home">Home</a>
-          <a href="#properties">Properties</a>
-          <a href="#services">Services</a>
-          <a href="#about">About Us</a>
-          <a href="#contact">Contact Us</a>
+          <Link to="/properties">Properties</Link>
+          <Link to="/services">Services</Link>
+          <Link to="/about">About Us</Link>
+          <Link to="/contact">Contact Us</Link>
+          <Link to="/login">Login</Link>
+          <Link to="/register">Register</Link>
         </nav>
 
         <a href="#contact" className="nav-button">
           Get in Touch
         </a>
       </header>
-
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
-
+export default Navbar;

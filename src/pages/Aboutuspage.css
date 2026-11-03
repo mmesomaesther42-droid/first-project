@@ -1,0 +1,237 @@
+.about-page {
+  width: 100%;
+  color: #12345a;
+}
+
+/* About Hero */
+.about-hero {
+  min-height: 420px;
+  padding: 100px 8%;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(rgba(10, 35, 65, 0.75), rgba(10, 35, 65, 0.75)),
+    url("https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.about-hero-content {
+  max-width: 700px;
+}
+
+.about-hero-content span,
+.about-story-content span,
+.about-section-heading span {
+  color: #d6a84f;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.about-hero h1 {
+  font-size: 55px;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.about-hero p {
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 600px;
+}
+
+/* Our Story */
+.about-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  padding: 90px 8%;
+}
+
+.about-story-image img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.about-story-content h2 {
+  font-size: 38px;
+  margin: 18px 0;
+}
+
+.about-story-content p {
+  color: #64748b;
+  line-height: 1.9;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* Mission and Vision */
+.mission-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  padding: 70px 8%;
+  background: #f4f7fb;
+}
+
+.mission-card,
+.vision-card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  border-left: 5px solid #d6a84f;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.mission-card h2,
+.vision-card h2 {
+  margin-bottom: 18px;
+  font-size: 27px;
+}
+
+.mission-card p,
+.vision-card p {
+  color: #64748b;
+  line-height: 1.9;
+}
+
+/* Core Values */
+.about-values {
+  padding: 90px 8%;
+}
+
+.about-section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.about-section-heading h2 {
+  font-size: 38px;
+  margin: 15px 0;
+}
+
+.about-section-heading p {
+  color: #64748b;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.value-card {
+  padding: 30px 23px;
+  background: #f4f7fb;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.value-card h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.value-card p {
+  color: #64748b;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+/* Call to Action */
+.about-cta {
+  margin: 30px 8% 80px;
+  padding: 65px 30px;
+  text-align: center;
+  background: #12345a;
+  color: white;
+  border-radius: 15px;
+}
+
+.about-cta h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.about-cta p {
+  color: #d5deea;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.about-cta-button {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #d6a84f;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.about-cta-button:hover {
+  background: #bd9038;
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .about-story {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-story-image img {
+    height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-hero {
+    min-height: 350px;
+    padding: 70px 6%;
+  }
+
+  .about-hero h1 {
+    font-size: 38px;
+  }
+
+  .about-story,
+  .mission-vision,
+  .about-values {
+    padding: 60px 6%;
+  }
+
+  .about-story-content h2,
+  .about-section-heading h2 {
+    font-size: 29px;
+  }
+
+  .mission-vision,
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-cta {
+    margin: 20px 6% 60px;
+    padding: 45px 20px;
+  }
+
+  .about-cta h2 {
+    font-size: 27px;
+  }
+}

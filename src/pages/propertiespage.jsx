@@ -1,39 +1,38 @@
-
-import React from 'react';
-import './Properties.css'
+import React from "react";
+import "./propertiespage.css";
 const properties = [
   {
     id: 1,
-    name: 'Modern Family Home',
-    location: 'Lekki, Lagos',
-    price: '₦185,000,000',
-    type: 'For Sale',
+    name: "Modern Family Home",
+    location: "Lekki, Lagos",
+    price: "₦185,000,000",
+    type: "For Sale",
     bedrooms: 4,
     bathrooms: 3,
     image:
-      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=85',
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=85",
   },
   {
     id: 2,
-    name: 'Luxury City Apartment',
-    location: 'Victoria Island, Lagos',
-    price: '₦8,500,000 / year',
-    type: 'For Rent',
+    name: "Luxury City Apartment",
+    location: "Victoria Island, Lagos",
+    price: "₦8,500,000 / year",
+    type: "For Rent",
     bedrooms: 3,
     bathrooms: 2,
     image:
-      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85',
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85",
   },
   {
     id: 3,
-    name: 'Contemporary Duplex',
-    location: 'GRA, Port Harcourt',
-    price: '₦220,000,000',
-    type: 'For Sale',
+    name: "Contemporary Duplex",
+    location: "GRA, Port Harcourt",
+    price: "₦220,000,000",
+    type: "For Sale",
     bedrooms: 5,
     bathrooms: 4,
     image:
-      'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85',
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85",
   },
 ];
 
@@ -45,8 +44,8 @@ function Properties() {
           <p className="properties-eyebrow">OUR PROPERTY COLLECTION</p>
           <h2>Find a home that fits your lifestyle</h2>
           <p>
-            Explore our featured homes and apartments. Discover a space
-            that suits your needs, style, and budget.
+            Explore our featured homes and apartments. Discover a space that
+            suits your needs, style, and budget.
           </p>
         </div>
 
